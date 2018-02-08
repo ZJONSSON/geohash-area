@@ -108,7 +108,7 @@ function checkRect(box) {
 
 module.exports.rect = function(lat,lng,dist,precision) {
   // Default distance is 5 miles
-  dist =  5;
+  dist =  dist || 5;
   // Default Precision is 5
   precision = precision || 5;
 

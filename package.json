@@ -1,0 +1,11 @@
+{
+  "author": {
+    "name": "Ziggy Jonsson",
+    "email": "ziggy.jonsson.nyc@gmail.com"
+  },
+  "description": "Geohashes area for database lookup",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "geohash-area",
+  "version": "0.0.1"
+}

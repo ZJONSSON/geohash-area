@@ -7,5 +7,5 @@
   "license": "MIT",
   "main": "index.js",
   "name": "geohash-area",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

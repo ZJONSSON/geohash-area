@@ -1,5 +1,4 @@
 /* jshint node:true */
-"use strict";
 // Provides both an encode function (lat,lon) and decode function(hash) to move between
 // geographic locations and geohashes
 //
@@ -7,15 +6,13 @@
 // Imported from [github](https://raw.github.com/aisaacs/geohash/master/GeoHash.js)
 // (C) 2012 AISAACS 
 
-var  DICT =  "0123456789bcdefghjkmnpqrstuvwxyz";
+var  DICT =  '0123456789bcdefghjkmnpqrstuvwxyz';
 
 module.exports.distance = function(start,end) {
   var dLat = Math.abs(end.lat - start.lat) * Math.PI/180;
   var dlng = Math.abs(end.lng - start.lng) * Math.PI/180;
   var lat1 = end.lat * Math.PI/180;
-  var lng1 = end.lng * Math.PI/180;
   var lat2 = start.lat * Math.PI/180;
-  var lng2 = start.lng * Math.PI/180;
 
   var d1 = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dlng/2) * Math.sin(dlng/2) * Math.cos(lat1) * Math.cos(lat2);
   return (2 * Math.atan2(Math.sqrt(d1), Math.sqrt(1-d1))) * 6371*0.621371;

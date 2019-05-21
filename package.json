@@ -6,6 +6,7 @@
   "description": "Geohashes area for database lookup",
   "license": "MIT",
   "main": "index.js",
+  "types": "./index.d.ts",
   "name": "geohash-area",
-  "version": "0.0.3"
+  "version": "0.1.0"
 }
